@@ -1,1 +1,2 @@
 # AudioFilter
+# Software Craftsmanship trainee
