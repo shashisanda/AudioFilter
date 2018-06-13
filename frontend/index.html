@@ -1,0 +1,81 @@
+<!doctype html>
+<html ng-app="app">
+<html>
+
+<head>
+    <title>Web Designing Course</title>
+       <link rel= "stylesheet"type="text/css"href="css/styles.css"media="screen">
+    <style>
+        #list of files{
+            list-style: none;
+        }
+        #list of files li a{
+            color:black;
+            text-decoration: none;
+        }
+        #list of files .current-song a{
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+        <h1>Application of Filters to Sound Files</h1>
+</header>
+<audio src="" controls id="audioPlayer">
+</audio>
+<h2>List of Audio Files</h2>
+<ul id="list of files">
+    <li class="current-song"><a href="Chris%20Brown%20-%20with%20you.mp3">Chris Brown - with you</a></li>
+    <li><a href="Clean%20Bandit%20Rockabye.mp3">Clean Bandit Rockabye</a></li>
+    <li><a href="Magic_-_Rude.mp3">Magic_-_Rude</a></li>
+    <li><a href="David%20Guetta%20Dangerous.mp3">David Guetta Dangerous</a> </li>
+    <li><a href="Look%20What%20You%20Made%20Me%20Do.mp3">Look What You Made Me DO</a></li>
+</ul>
+<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script src="audioPlayer.js"></script>
+<script>
+    audioPlayer();
+</script>
+<script src="myApp.js"></script>
+<script src="myCtrl.js"></script>
+<section>
+    <nav>
+        <ul>
+            <li> <a href="#">Sound Files</a></li>
+            <li> <a href="#">List of Filters</a></li>
+            <li> <a href="#">Filtered sound file</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h2>Description about Filters</h2>
+        <img src="filter.jpg" alt="Filter" width="250px" height="220px">
+        <p> A lowpass filter allows frequencies below the cutoff frequency to pass through and attenuates frequencies above the cutoff.</p>
+        <p>A highpass filter is the opposite of a lowpass filter. Frequencies above the cutoff frequency are passed through, but frequencies below the cutoff are attenuated.</p>
+        <p> A bandpass filter allows a range of frequencies to pass through and attenuates the frequencies below and above this frequency range. <br></br> Bandpass implements a second-order bandpass filter.</p>
+        <p>The notch filter (also known as a band-stop or band-rejection filter) is the opposite of a bandpass filter. It allows all frequencies through, except for a set of frequencies.</p>
+        <p>An allpass filter allows all frequencies through, but changes the phase relationship between the various frequencies.<br></br> Allpass implements a second-order allpass filter.</p>
+    </article>
+    <hr>
+    <article>
+        <h2>Description about Sound Files</h2>
+        <img src="audio.jpg" alt="Audio" width="250px" height="220px">
+        <p>An audio file format is a file format for storing digital audio data on a computer system. The bit layout of the audio data (excluding metadata) is called the audio coding format.</p>
+        <p> Itcan be uncompressed, or compressed to reduce the file size, often using lossy compression. The data can be a raw bitstream in an audio coding format, but it is usually embedded in a container format or an audio data format with defined storage layer.A lossless compressed format stores data in less space without losing any information. The original, uncompressed data can be recreated from the compressed version.<br></br>Uncompressed audio formats encode both sound and silence with the same number of bits per unit of time. Encoding an uncompressed minute of absolute silence produces a file of the same size as encoding an uncompressed minute of music. In a lossless compressed format, however, the music would occupy a smaller file than an uncompressed format and the silence would take up almost no space at all.<br></br>Lossless compression formats include the common FLAC, WavPack, Monkey's Audio, ALAC (Apple Lossless). They provide a compression ratio of about 2:1 (i.e. their files take up half the space of PCM). Development in lossless compression formats aims to reduce processing time while maintaining a good compression ratio.</p>
+    </article>
+</section>
+
+<footer>Copyright
+    © www.filterstoaudio.blogspot.com</footer>
+</body>
+
+</html>
+
+    <script src="js/angular.min.js"></script>
+    <script src="app/services/note.service.js"></script>
+    <script src="app/note/note.controller.js"></script>
+    <script src="app/notes/notes.controller.js"></script>
+    <script src="app/note-form/note-form.controller.js"></script>
+    <script src="app/app.js"></script>
+</html>
